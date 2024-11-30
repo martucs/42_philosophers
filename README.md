@@ -5,6 +5,17 @@ Input in ms:
 
     ./philo philo_num  philo_num  time_to_die  time_to_eat  time_to_sleep  [meals_to_die]
 
+If you want all philos to LIVE:
+
+
+time_to_die has to be >= time_to_eat + time_to_sleep
+
+time_to_die has to be 3 times bigger than time_to_eat when philo_num is an odd number!
+
+time_to_sleep has to be < than time_to_die / 2
+
+About my code
+ -------------------------------------------------------------------------------
 
 
 - I have 1 general mutex for all philos to use when they want to print in stdout (print_mutex)
