@@ -7,6 +7,8 @@ A project about threads and mutexes
 
 - I have a linked list for the philosophers and an array of mutexes for the forks
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Things that could be improved:
 
 - Each philo has their own 'check_mutex' to protect three individual variables -> it would probably be better to have a mutex x variable.
