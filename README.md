@@ -17,12 +17,12 @@ time_to_sleep has to be < than time_to_die / 2
 About my code
  -------------------------------------------------------------------------------
 
-
-- I have 1 general mutex for all philos to use when they want to print in stdout (print_mutex)
-
 - It works correctly with 200 philos
-
+- I have 1 general mutex for all philos to use when they want to print in stdout (print_mutex)
 - I have a linked list for the philosophers and an array of mutexes for the forks
+- I have my own 'usleep' function
+- I make all the philosphers try to grab first their fork (right_fork) and then the one from the philo on their left (left_fork)
+- I make the philosphers with even number ids wait before grabbing forks ONLY the first time they start the simulation
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
